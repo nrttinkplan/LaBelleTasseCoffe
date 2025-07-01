@@ -11,7 +11,7 @@ const AboutPage = () => {
     <div className="page-container">
       <div className="relative h-80 overflow-hidden">
         <img 
-          src="src/assets/images/aboutCoffee.jpg" 
+          src="/images/aboutCoffee.jpg" 
           alt="La Belle Tasse kahve hazırlama" 
           className="w-full h-full object-cover"
           style={{ filter: 'brightness(0.7)',width: '100%',
@@ -88,7 +88,7 @@ const AboutPage = () => {
               </div>
               <div className="relative h-full">
                 <img 
-                  src="src/assets/images/coffe.jpg" 
+                  src="/images/coffe.jpg" 
                   alt="La Belle Tasse kahve çekirdekleri" 
                   className="rounded-lg shadow-lg h-full object-cover"
                 />
@@ -103,42 +103,42 @@ const AboutPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="card overflow-hidden h-80">
             <img 
-              src="src/assets/images/coffeicmekan.jpg" 
+              src="/images/coffeicmekan.jpg" 
               alt="La Belle Tasse iç mekan" 
               className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
             />
           </div>
           <div className="card overflow-hidden h-80">
             <img 
-              src="src/assets/images/oturmaalanı.jpg" 
+              src="/images/oturmaalanı.jpg" 
               alt="La Belle Tasse oturma alanı" 
               className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
             />
           </div>
           <div className="card overflow-hidden h-80">
             <img 
-              src="src/assets/images/disMekan.jpg" 
+              src="/images/disMekan.jpg" 
               alt="La Belle Tasse dış mekan" 
               className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
             />
           </div>
           <div className="card overflow-hidden h-80">
             <img 
-              src="src/assets/images/kahveHazirlama.jpg" 
+              src="/images/kahveHazirlama.jpg" 
               alt="La Belle Tasse kahve hazırlama" 
               className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
             />
           </div>
           <div className="card overflow-hidden h-80">
             <img 
-              src="src/assets/images/barista.jpg" 
+              src="/images/barista.jpg" 
               alt="La Belle Tasse barista" 
               className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
             />
           </div>
           <div className="card overflow-hidden h-80">
             <img 
-              src="src/assets/images/outdoor.jpg" 
+              src="/images/outdoor.jpg" 
               alt="La Belle Tasse bahçe" 
               className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
             />
