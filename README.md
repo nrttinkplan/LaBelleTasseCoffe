@@ -1,12 +1,51 @@
-# React + Vite
+# La Belle Tasse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern bir kafe için hazırlanmış, dinamik içerik yönetimi sağlayan web sitesi.
 
-Currently, two official plugins are available:
+## Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Dinamik menü ve blog yönetimi (Firebase Firestore ile)
+- Admin paneli (korumalı giriş)
+- Rezervasyon ve iletişim formları
+- Modern ve mobil uyumlu tasarım (Tailwind CSS)
+- Animasyonlar ve kullanıcı dostu arayüz
 
-## Expanding the ESLint configuration
+## Kullanılan Teknolojiler
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- Firebase
+- Tailwind CSS
+- Framer Motion
+
+## Kurulum
+
+1. Bu repoyu klonlayın:
+   ```sh
+   git clone https://github.com/kullanici-adi/LaBelleTasse.git
+   cd LaBelleTasse
+   ```
+
+2. Bağımlılıkları yükleyin:
+   ```sh
+   npm install
+   ```
+
+3. Proje kök dizinine bir `.env` dosyası oluşturun ve aşağıdaki gibi doldurun:
+   ```properties
+   VITE_FIREBASE_API_KEY="YOUR_API_KEY"
+   VITE_FIREBASE_AUTH_DOMAIN="YOUR_AUTH_DOMAIN"
+   VITE_FIREBASE_PROJECT_ID="YOUR_PROJECT_ID"
+   VITE_FIREBASE_STORAGE_BUCKET="YOUR_STORAGE_BUCKET"
+   VITE_FIREBASE_MESSAGING_SENDER_ID="YOUR_MESSAGING_SENDER_ID"
+   VITE_FIREBASE_APP_ID="YOUR_APP_ID"
+   ```
+
+4. Uygulamayı başlatın:
+   ```sh
+   npm run dev
+   ```
+
+## Katkı
+
+Katkıda bulunmak için lütfen bir fork oluşturun ve pull request gönderin.
