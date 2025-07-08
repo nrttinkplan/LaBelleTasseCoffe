@@ -23,7 +23,7 @@ function MenuPage() {
     };
 
     fetchMenuData();
-  }, []); // Boş dependency array, bu etkinin sadece component ilk yüklendiğinde çalışmasını sağlar.
+  }, []); 
 
   if (loading) {
     return <div className="container mx-auto py-20 text-center text-xl text-coffee-dark">Menü Yükleniyor...</div>;
@@ -67,7 +67,7 @@ function MenuPage() {
 
       {menuCategories.map((category, categoryIndex) => (
         <motion.section 
-          key={category.id} // Firestore'dan gelen benzersiz doküman ID'sini kullanmak daha güvenilirdir.
+          key={category.id} 
           className="mb-12"
           variants={categoryVariants}
           custom={categoryIndex}

@@ -12,11 +12,11 @@ const BlogPage = () => {
     const fetchBlogPosts = async () => {
       try {
         const postsCollectionRef = collection(db, "blogPosts");
-        const q = query(postsCollectionRef, orderBy("date", "desc")); // Yazıları tarihe göre sırala
+        const q = query(postsCollectionRef, orderBy("date", "desc")); 
         const querySnapshot = await getDocs(q);
         const postsData = querySnapshot.docs.map(doc => {
           const data = doc.data();
-          // Tarihi daha okunabilir bir formata dönüştür
+          
           const formattedDate = new Date(data.date).toLocaleDateString('tr-TR', {
             year: 'numeric',
             month: 'long',
@@ -26,7 +26,7 @@ const BlogPage = () => {
             id: doc.id, 
             ...data,
             date: formattedDate,
-            excerpt: data.content // İçeriği excerpt olarak kullan
+            excerpt: data.content 
           };
         });
         setBlogPosts(postsData);

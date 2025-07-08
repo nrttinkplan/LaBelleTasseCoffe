@@ -11,10 +11,10 @@ const AdminPanelPage = () => {
   const [loading, setLoading] = useState(true);
   const [editingItem, setEditingItem] = useState(null);
   const [editingPost, setEditingPost] = useState(null);
-  const [newCategoryName, setNewCategoryName] = useState(''); // Yeni kategori adı için state
+  const [newCategoryName, setNewCategoryName] = useState(''); 
   const navigate = useNavigate();
 
-  // Firestore'dan verileri çek
+  
   const fetchMenuData = async () => {
     setLoading(true);
     const querySnapshot = await getDocs(collection(db, "menuCategories"));
@@ -23,7 +23,7 @@ const AdminPanelPage = () => {
     setLoading(false);
   };
 
-  // Blog gönderilerini çek
+  
    const fetchBlogData= async () => {
     const querySnapshot = await getDocs(collection(db, "blogPosts"));
     const postsData = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
@@ -40,7 +40,7 @@ const AdminPanelPage = () => {
   }, []);
 
 
-  // Ürün ekleme/güncelleme
+
   const handleItemSubmit = async (e, categoryId) => {
     e.preventDefault();
     const categoryDocRef = doc(db, "menuCategories", categoryId);

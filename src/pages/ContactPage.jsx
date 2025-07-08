@@ -169,7 +169,7 @@ const ContactPage = () => {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-serif font-medium text-coffee-dark mb-6">Bizi Ziyaret Edin</h2>
             <div className="rounded-lg overflow-hidden h-[400px] bg-coffee-light/20 flex items-center justify-center">
-              {/* Buraya gerçek bir harita eklenebilir, şimdilik yer tutucu */}
+              
               <p className="text-coffee-dark">Google Maps veya başka bir harita servisi buraya entegre edilebilir</p>
             </div>
           </div>
