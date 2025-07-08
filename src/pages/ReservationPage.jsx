@@ -38,6 +38,7 @@ const ReservationPage = () => {
 
         {/* Reservation Form */}
         <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
+          <h2 className="text-2xl font-serif font-medium text-coffee-dark mb-6">Rezervasyon Formu</h2>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-coffee-darkest mb-1 font-medium">Ad Soyad</label>
@@ -114,6 +115,7 @@ const ReservationPage = () => {
 
         {/* Reservation Info */}
         <div className="text-center mt-12 max-w-2xl mx-auto text-sm text-coffee-dark/70">
+          <h3 className="text-xl font-serif font-medium text-coffee-dark mb-2">Bilgilendirme</h3>
           <p>8 kişiden fazla gruplar için lütfen <a href="tel:+902125554433" className="font-medium underline hover:text-coffee-dark">+90 212 555 44 33</a> numaralı telefondan bizimle iletişime geçin.</p>
           <p className="mt-2">Rezervasyonunuz, tarafımızdan onaylandıktan sonra geçerli olacaktır. Onay için size e-posta veya telefon yoluyla ulaşacağız.</p>
         </div>

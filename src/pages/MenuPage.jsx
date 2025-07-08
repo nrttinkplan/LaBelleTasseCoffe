@@ -43,6 +43,28 @@ function MenuPage() {
         Menümüz
       </motion.h1>
 
+      <motion.section
+    className="max-w-3xl mx-auto mb-12 text-lg text-coffee-darkest bg-white/70 p-6 rounded-lg shadow"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.2 }}
+  >
+    <p>
+      La Belle Tasse olarak, kahve tutkumuzu ve lezzet anlayışımızı menümüze yansıtıyoruz. Her bir içeceğimiz ve atıştırmalığımız, özenle seçilmiş malzemelerle, deneyimli baristalarımız ve şeflerimiz tarafından hazırlanır. 
+      Kahve çekirdeklerimiz, Kolombiya ve Etiyopya'nın en iyi çiftliklerinden tedarik edilmekte olup, her fincanda tazelik ve yoğun aroma sunar. 
+      Sütlü içeceklerimizde günlük taze süt kullanıyor, vegan misafirlerimiz için bitkisel süt alternatifleri de sunuyoruz. 
+      Tatlılarımız ve atıştırmalıklarımız ise yerel üreticilerden temin edilen doğal malzemelerle hazırlanır.
+    </p>
+    <p className="mt-4">
+      Menümüzde klasik espresso bazlı içeceklerden, üçüncü nesil demleme yöntemlerine; taze demlenmiş çaylardan, ev yapımı limonatalara kadar geniş bir yelpaze bulabilirsiniz. 
+      Ayrıca glutensiz ve vegan seçeneklerimizle her damak zevkine hitap ediyoruz. 
+      Her ürünümüzün yanında, içeriği ve önerilen sunum şekliyle ilgili detaylı açıklamalar bulabilirsiniz.
+    </p>
+    <p className="mt-4">
+      Lezzet yolculuğumuza katılın ve La Belle Tasse farkını keşfedin!
+    </p>
+  </motion.section>
+
       {menuCategories.map((category, categoryIndex) => (
         <motion.section 
           key={category.id} // Firestore'dan gelen benzersiz doküman ID'sini kullanmak daha güvenilirdir.
