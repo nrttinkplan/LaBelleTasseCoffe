@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-// import { menuCategories } from '../data/menuData'; // Bu satırı kaldırıyoruz
+
 import { motion } from 'framer-motion';
 import { containerVariants, itemVariants, cardVariants, categoryVariants, titleVariants } from '../animations/commonVariants';
-import { db } from '../firebaseConfig'; // Firebase konfigürasyonunu import ediyoruz
-import { collection, getDocs } from 'firebase/firestore'; // Firestore fonksiyonlarını import ediyoruz
+import { db } from '../firebaseConfig'; 
+import { collection, getDocs } from 'firebase/firestore'; 
 
 function MenuPage() {
   const [menuCategories, setMenuCategories] = useState([]);
